@@ -5,6 +5,7 @@ specifiers:
   '@babel/preset-env': ^7.20.2
   '@babel/preset-react': ^7.18.6
   '@hot-loader/react-dom': ^17.0.2+4.13.0
+  '@types/mockjs': ^1.0.7
   '@types/react': ^18.0.25
   '@types/react-dom': ^18.0.9
   ahooks: ^3.7.2
@@ -15,6 +16,7 @@ specifiers:
   html-webpack-plugin: ^5.5.0
   less: ^4.1.3
   less-loader: ^11.1.0
+  mockjs: ^1.1.0
   node-sass: ^8.0.0
   prettier: ^2.7.1
   react: ^18.2.0
@@ -32,6 +34,7 @@ specifiers:
 dependencies:
   ahooks: registry.npmmirror.com/ahooks/3.7.2_react@18.2.0
   antd: registry.npmmirror.com/antd/4.24.2_biqbaboplfbrettd7655fr4n2y
+  mockjs: registry.npmmirror.com/mockjs/1.1.0
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-hot-loader: registry.npmmirror.com/react-hot-loader/4.13.1_2zx2umvpluuhvlq44va5bta2da
@@ -41,6 +44,7 @@ devDependencies:
   '@babel/preset-env': registry.npmmirror.com/@babel/preset-env/7.20.2_@babel+core@7.20.2
   '@babel/preset-react': registry.npmmirror.com/@babel/preset-react/7.18.6_@babel+core@7.20.2
   '@hot-loader/react-dom': registry.npmmirror.com/@hot-loader/react-dom/17.0.2_react@18.2.0
+  '@types/mockjs': registry.npmmirror.com/@types/mockjs/1.0.7
   '@types/react': registry.npmmirror.com/@types/react/18.0.25
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.9
   babel-loader: registry.npmmirror.com/babel-loader/9.1.0_npabyccmuonwo2rku4k53xo3hi
@@ -2068,6 +2072,12 @@ packages:
     version: 1.2.2
     dev: true
 
+  registry.npmmirror.com/@types/mockjs/1.0.7:
+    resolution: {integrity: sha512-OCxXz6hEaJOVpRwuJMiVY5a6LtJcih+br9gwB/Q8ooOBikvk5FpBQ31OlNimXo3EqKha1Z7PFBni+q9m+8NCWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/mockjs/-/mockjs-1.0.7.tgz}
+    name: '@types/mockjs'
+    version: 1.0.7
+    dev: true
+
   registry.npmmirror.com/@types/node/18.11.9:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.11.9.tgz}
     name: '@types/node'
@@ -2963,7 +2973,6 @@ packages:
     name: commander
     version: 8.3.0
     engines: {node: '>= 12'}
-    dev: true
 
   registry.npmmirror.com/commondir/1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commondir/-/commondir-1.0.1.tgz}
@@ -4939,6 +4948,15 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dev: true
+
+  registry.npmmirror.com/mockjs/1.1.0:
+    resolution: {integrity: sha512-eQsKcWzIaZzEZ07NuEyO4Nw65g0hdWAyurVol1IPl1gahRwY+svqzfgfey8U8dahLwG44d6/RwEzuK52rSa/JQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mockjs/-/mockjs-1.1.0.tgz}
+    name: mockjs
+    version: 1.1.0
+    hasBin: true
+    dependencies:
+      commander: registry.npmmirror.com/commander/8.3.0
+    dev: false
 
   registry.npmmirror.com/moment/2.29.4:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/moment/-/moment-2.29.4.tgz}
