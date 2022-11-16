@@ -4,10 +4,43 @@ import { hot } from "react-hot-loader/root";
 function App() {
   return (
     <>
-      {/* <TryDrag /> */}
+      {/* ## useRequest */}
+      {/* ### QuickStart */}
+      {/* <DefaultUsage /> */}
+      {/* <ManualTrigger /> */}
 
-      {/* SideEffect */}
-      {/* <TryDebounce /> */}
+      {/* ### Basic Usage */}
+      {/* <DefaultRequest /> */}
+      {/* <ManualTrigger /> */}
+      {/* <TheLifeCycle /> */}
+      {/* <Refresh /> */}
+      {/* <ChangeDataImmediately /> */}
+      {/* <CancelRequest /> */}
+      {/* <ParameterManagement /> */}
+
+      {/* ### Loading Delay */}
+      {/* <LoadingDelay /> */}
+
+      {/* ### Polling */}
+      {/* <Polling /> */}
+      {/* <PollingErrorRetry /> */}
+
+      {/* ### Ready */}
+      {/* <AutomaticMode /> */}
+      {/* <ManualMode /> */}
+
+      {/* <RefreshDeps /> */}
+
+      {/* <RefreshOnWindowFocus /> */}
+
+      {/* <Debounce /> */}
+
+      {/* <SWR /> */}
+      {/* <KeepYourDataFresh /> */}
+      {/* <DataSharing /> */}
+      {/* <ParametersCache/> */}
+      {/* <ClearCache /> */}
+      {/* <CustomCache /> */}
     </>
   )
 }
