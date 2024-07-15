@@ -1,4 +1,5 @@
 # ahooks
+实际地址：https://ahooks.js.org/hooks/use-history-travel
 
 ## useRequest
 ### Quick Start
@@ -83,3 +84,24 @@ useRequest 返回的 params 会记录 service 的参数。例如，如果触发 
 |refreshAsync|使用最后一个参数，() => Promise<TData>|TData｜undefined|
 |mutate|直接修改数据|(data?: TData / ((oldData?: TData) => (TData / undefined))) => void|
 |cancel|服务器是否异常|() => void|
+
+[TS2304: Cannot find name 'setTimeout' | 'console' | 'localStorage'.](https://code.dblock.org/2019/07/04/getting-started-with-typescript.html) ESNext, DOM即可
+
+[Property 'entries' does not exist on type 'ObjectConstructor'.](https://github.com/pyscript/pyscript/issues/703) 记得重启项目
+
+```ts
+Promise 添加返回类型判断
+export function fetchCount(amount: number) {
+    return new Promise<{data: number}>((resolve) =>
+        setTimeout(() => resolve({ data: amount }), 500)
+    );
+}
+
+export const incrementAsync = createAsyncThunk(
+    "counter/fetchCount",
+    async (amount: number) => {
+        const response = await fetchCount(amount);
+        return response.data; // red wave info under response
+    }
+);
+```
