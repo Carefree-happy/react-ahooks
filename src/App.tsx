@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { hot } from "react-hot-loader/root";
-import WebSocket from './scene/1000useWebSocket';
+import Mount from './lifeCycle/0000useMount';
+import Unmount from './lifeCycle/0001useUnmount';
+import UnmountedRef from './lifeCycle/0002useUnmountedRef';
 
 function App() {
   return (
@@ -94,6 +96,11 @@ function App() {
       {/* <TextSelectionSpecifiedArea /> */}
       {/* <TextSelectionTranslate /> */}
       {/* <WebSocket /> */}
+
+      {/* ## lifeCycle */}
+      {/* <Mount /> */}
+      {/* <Unmount /> */}
+      <UnmountedRef />
     </>
   )
 }
