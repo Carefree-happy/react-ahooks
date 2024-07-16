@@ -1,16 +1,16 @@
-import { useDeepCompareEffect } from 'ahooks';
-import React, { useEffect, useState, useRef } from 'react';
+import { useDeepCompareLayoutEffect } from 'ahooks';
+import React, { useLayoutEffect, useState, useRef } from 'react';
 
-function DeepCompareEffect() {
-  const [count, setCount] = useState(0);
+function DeepCompareLayoutEffect() {
+  const [, setCount] = useState(0);
   const effectCountRef = useRef(0);
   const deepCompareCountRef = useRef(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     effectCountRef.current += 1;
   }, [{}]);
 
-  useDeepCompareEffect(() => {
+  useDeepCompareLayoutEffect(() => {
     deepCompareCountRef.current += 1;
     return () => {
       // do something
@@ -30,4 +30,4 @@ function DeepCompareEffect() {
   );
 };
 
-export default DeepCompareEffect;
+export default DeepCompareLayoutEffect;
